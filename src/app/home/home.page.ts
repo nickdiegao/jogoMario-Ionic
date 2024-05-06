@@ -19,14 +19,6 @@ export class HomePage implements OnInit{
       setTimeout(() => {
         mario.classList.remove('jump');
       }, 500);
-
-      mario.addEventListener('touchstart', function(event) {
-        event.preventDefault();
-    
-        const touchX = event.touches[0].clientX;
-        const touchY = event.touches[0].clientY;
-    
-        console.log('Toque detectado em X:', touchX, 'e Y:', touchY);});
     }
 
     const loop = setInterval(() => {
